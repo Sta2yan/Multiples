@@ -7,17 +7,21 @@ namespace Multiples
     {
         static void Main(string[] args)
         {
-            int maximumNumber = 27;
-            int startNumber = 3;
+            Random random = new Random();
+            int maximumNumber = 28;
+            int minimumNumber = 1;
+            int number = random.Next(minimumNumber, maximumNumber);
             int multipleNumbers = 0;
-            int enlargedNumber = 3;
 
-            for (int i = startNumber; i <= maximumNumber; i += enlargedNumber)
+            Console.WriteLine(number);
+
+            for (int i = number; i < 1000; i += number)
             {
-                ++multipleNumbers;
+                if (i > 99)
+                    multipleNumbers++;
             }
 
-            Console.WriteLine($"{multipleNumbers}");
+            Console.WriteLine(multipleNumbers);
         }
     }
 }
