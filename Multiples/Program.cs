@@ -13,8 +13,6 @@ namespace Multiples
             int number = random.Next(minimumNumber, maximumNumber);
             int multipleNumbers = 0;
 
-            Console.WriteLine(number);
-
             for (int i = number; i < 1000; i += number)
             {
                 if (i > 99)
