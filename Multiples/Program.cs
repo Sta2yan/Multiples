@@ -12,10 +12,12 @@ namespace Multiples
             int minimumNumber = 1;
             int number = random.Next(minimumNumber, maximumNumber);
             int multipleNumbers = 0;
+            int maximumThreeDigitNumber = 999;
+            int minimumThreeDigitNumber = 100;
 
-            for (int i = number; i < 1000; i += number)
+            for (int i = number; i <= maximumThreeDigitNumber; i += number)
             {
-                if (i > 99)
+                if (i >= minimumThreeDigitNumber)
                     multipleNumbers++;
             }
 
